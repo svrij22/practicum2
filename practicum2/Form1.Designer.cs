@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.num3Text = new System.Windows.Forms.TextBox();
             this.num3TextLb = new System.Windows.Forms.Label();
+            this.Randomize = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -47,7 +48,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "go!";
+            this.button1.Text = "Go!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -133,11 +134,22 @@
             this.num3TextLb.TabIndex = 12;
             this.num3TextLb.Text = "Number 3";
             // 
+            // Randomize
+            // 
+            this.Randomize.Location = new System.Drawing.Point(177, 47);
+            this.Randomize.Name = "Randomize";
+            this.Randomize.Size = new System.Drawing.Size(75, 23);
+            this.Randomize.TabIndex = 14;
+            this.Randomize.Text = "Randomize";
+            this.Randomize.UseVisualStyleBackColor = true;
+            this.Randomize.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 406);
+            this.Controls.Add(this.Randomize);
             this.Controls.Add(this.num3Text);
             this.Controls.Add(this.num3TextLb);
             this.Controls.Add(this.num2Text);
@@ -153,8 +165,11 @@
             this.Text = "v";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+        private System.Windows.Forms.Button Randomize;
+
+        private System.Windows.Forms.Button button2;
 
         #endregion
 
